@@ -1,6 +1,6 @@
 const R=document.documentElement,B=document.getElementById('lang'),V=[...document.querySelectorAll('.hero-video')];
 B?.addEventListener('click',()=>{let a=R.lang!=='ar';R.lang=a?'ar':'en';R.dir=a?'rtl':'ltr';document.body.classList.toggle('ar',a);document.querySelectorAll('[data-en]').forEach(e=>e.textContent=a?e.dataset.ar:e.dataset.en);document.querySelectorAll('[data-ph-en]').forEach(e=>e.placeholder=a?e.dataset.phAr:e.dataset.phEn);B.textContent=a?'EN':'AR'});
-const S=['https://www.pexels.com/download/video/31352808/','https://videos.pexels.com/video-files/6194507/6194507-hd_1920_1080_25fps.mp4'];V.forEach((v,i)=>{let s=v.querySelector('source');if(s&&S[i]){s.src=S[i];v.load();v.play().catch(()=>{})}});
+const S=['https://www.pexels.com/video/31352808/download/','https://videos.pexels.com/video-files/6194507/6194507-hd_1920_1080_25fps.mp4'];V.forEach((v,i)=>{let s=v.querySelector('source');if(s&&S[i]){s.src=S[i];v.load();v.play().catch(()=>{})}});
 const O=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');O.unobserve(x.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>O.observe(e));
 let A=0;if(V.length>1)setInterval(()=>{V[A].classList.remove('active');A=(A+1)%V.length;V[A].classList.add('active')},7000);
 addEventListener('pointermove',e=>{let g=document.querySelector('.cursor-glow');if(g){g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'}});
