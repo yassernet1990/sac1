@@ -8,9 +8,9 @@ let l=D.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapi
 let s=D.createElement('style');s.textContent=`
 .ar{font-family:Alexandria,Arial,sans-serif}.ar h1,.ar h2,.ar h3{font-family:Alexandria,Arial,sans-serif;font-weight:700;line-height:1.22;letter-spacing:-.8px!important}.ar p,.ar a,.ar button,.ar input,.ar textarea,.ar select,.ar span{font-family:Alexandria,Arial,sans-serif}
 .video-stack,.hero-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important}.hero-video{object-fit:cover!important;opacity:.72!important}
-#services{background:#fff!important;max-width:none!important;width:100%!important;padding-left:max(20px,calc((100% - 1220px)/2))!important;padding-right:max(20px,calc((100% - 1220px)/2))!important}
-#services .equipment-grid{background:#fff!important;gap:16px!important}
-#services .equipment-card{border:1px solid #e3e9ed!important}
+#services,#partners{background:#fff!important;max-width:none!important;width:100%!important;padding-left:max(20px,calc((100% - 1220px)/2))!important;padding-right:max(20px,calc((100% - 1220px)/2))!important}
+#services .equipment-grid,#partners .equipment-grid{background:#fff!important;gap:16px!important}
+#services .equipment-card,#partners .equipment-card{border:1px solid #e3e9ed!important}
 .ar .hero-content{padding-top:10vh!important;transform:translateY(-18px)}
 .ar .hero h1{font-size:clamp(44px,5.8vw,82px)!important;line-height:1.18!important;max-width:980px!important;margin:18px 0 18px!important}
 .ar .hero-content p{font-size:17px!important;line-height:1.65!important;max-width:780px!important}
