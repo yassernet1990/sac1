@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" role="img" aria-labelledby="title desc">
+  <title id="title">SAC Logistics mark</title>
+  <desc id="desc">Angular two-part SAC Logistics symbol</desc>
+  <defs>
+    <linearGradient id="sacGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#13c4e2"/>
+      <stop offset="1" stop-color="#c5df31"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sacGradient)" d="M24 103 132 12h264l-75 58H158l-33 31 119 27-71 61z"/>
+  <path fill="url(#sacGradient)" d="m296 126 82 18-194 164
