@@ -11,10 +11,14 @@ let s=D.createElement('style');s.textContent=`
 #services,#partners{background:#fff!important;max-width:none!important;width:100%!important;padding-left:max(20px,calc((100% - 1220px)/2))!important;padding-right:max(20px,calc((100% - 1220px)/2))!important}
 #services .equipment-grid,#partners .equipment-grid{background:#fff!important;gap:16px!important}
 #services .equipment-card,#partners .equipment-card{border:1px solid #e3e9ed!important}
+.hero-content{padding-top:10vh!important;transform:translateY(-22px)}
+.hero h1{font-size:clamp(46px,6.2vw,88px)!important;line-height:.98!important;max-width:940px!important;margin:18px 0 18px!important}
+.hero-content p{font-size:16px!important;line-height:1.6!important;max-width:720px!important}
+.hero-actions{margin-top:22px!important}
 .ar .hero-content{padding-top:10vh!important;transform:translateY(-18px)}
 .ar .hero h1{font-size:clamp(44px,5.8vw,82px)!important;line-height:1.18!important;max-width:980px!important;margin:18px 0 18px!important}
 .ar .hero-content p{font-size:17px!important;line-height:1.65!important;max-width:780px!important}
 .ar .hero-actions{margin-top:24px!important}
-@media(max-width:960px){.ar .hero-content{padding-top:10vh!important;transform:translateY(-10px)}.ar .hero h1{font-size:54px!important}}
-@media(max-width:600px){.ar .hero{min-height:920px!important}.ar .hero-content{padding-top:9vh!important;transform:none}.ar .hero h1{font-size:39px!important;line-height:1.25!important;margin:14px 0!important}.ar .hero-content p{font-size:15px!important;line-height:1.65!important}.ar .hero-actions{margin-top:18px!important}}
+@media(max-width:960px){.hero-content{padding-top:9vh!important;transform:translateY(-14px)}.hero h1{font-size:54px!important;line-height:1.02!important}.hero-content p{font-size:15px!important}.ar .hero-content{padding-top:10vh!important;transform:translateY(-10px)}.ar .hero h1{font-size:54px!important}}
+@media(max-width:600px){.hero{min-height:900px!important}.hero-content{padding-top:8vh!important;transform:none}.hero h1{font-size:38px!important;line-height:1.06!important;margin:12px 0!important;letter-spacing:-2px!important}.hero-content p{font-size:14px!important;line-height:1.55!important}.hero-actions{margin-top:16px!important}.ar .hero{min-height:920px!important}.ar .hero-content{padding-top:9vh!important;transform:none}.ar .hero h1{font-size:39px!important;line-height:1.25!important;margin:14px 0!important}.ar .hero-content p{font-size:15px!important;line-height:1.65!important}.ar .hero-actions{margin-top:18px!important}}
 `;D.head.appendChild(s);
