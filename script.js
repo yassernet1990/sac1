@@ -1,4 +1,5 @@
 const D=document,R=D.documentElement,B=D.getElementById('lang'),V=[...D.querySelectorAll('.hero-video')];
+let fav=D.querySelector('link[rel="icon"]')||D.createElement('link');fav.rel='icon';fav.type='image/svg+xml';fav.href='favicon.svg?v=2';if(!fav.parentNode)D.head.appendChild(fav);
 B?.addEventListener('click',()=>{let a=R.lang!='ar';R.lang=a?'ar':'en';R.dir=a?'rtl':'ltr';D.body.classList.toggle('ar',a);D.querySelectorAll('[data-en]').forEach(e=>e.textContent=a?e.dataset.ar:e.dataset.en);D.querySelectorAll('[data-ph-en]').forEach(e=>e.placeholder=a?e.dataset.phAr:e.dataset.phEn);B.textContent=a?'EN':'AR'});
 if(V[0]){let q=V[0].querySelector('source');q.src='https://www.pexels.com/download/video/31352808/';V[0].load();V[0].muted=V[0].loop=V[0].playsInline=true;V[0].classList.add('active');V[0].play().catch(()=>{})}if(V[1])V[1].remove();
 let O=new IntersectionObserver(x=>x.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');O.unobserve(e.target)}}),{threshold:.12});D.querySelectorAll('.reveal').forEach(e=>O.observe(e));
